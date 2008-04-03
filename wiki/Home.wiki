@@ -1,0 +1,36 @@
+
+= Introduction =
+
+SimplyGlobal contains hashes of languages.
+
+{{{
+# français
+fr = {
+    "hi" => "bonjour",
+    "welcome" => "bienvenue"  
+}
+
+# espanol
+es = {
+    "hi" => "hola"
+    "welcome" => "bienvenidos"  
+}
+}}}
+
+
+= Install =
+
+  # Copy the plugin in _vendor/plugin_
+  # Create a file named _simplyglobal.rb_ in _config/initializers_
+  # Create a `hash` of language
+{{{
+# français
+fr = {
+    "hi" => "bonjour",
+    "welcome" => "bienvenue"  
+}
+}}}
+  # Add the language `hash` to the object
+{{{
+SimplyGlobal.add_language_hash(:fr, fr)
+}}}
