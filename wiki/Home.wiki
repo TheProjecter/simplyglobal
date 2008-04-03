@@ -1,26 +1,14 @@
 = Introduction =
 
-SimplyGlobal contains hashes of languages.
-
-{{{
-# français
-fr = {
-    "hi" => "bonjour",
-    "welcome" => "bienvenue"  
-}
-
-# espanol
-es = {
-    "hi" => "hola"
-    "welcome" => "bienvenidos"  
-}
-}}}
-
+*SimplyGlobal*...
+  * is simple
+  * makes it easy to use different template files for different languages
+  * uses multilingual file written in pure ruby... no database or yml files
 
 = Install =
 
-  # Copy the plugin in _vendor/plugin_
-  # Create a file named _simplyglobal.rb_ in _config/initializers_
+  # Copy the plugin in the _vendor/plugin_ directory
+  # Create a file named _simplyglobal.rb_ in the _config/initializers_ directory
   # Create a `hash` of language
 {{{
 # français
