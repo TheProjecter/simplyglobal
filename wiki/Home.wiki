@@ -1,7 +1,7 @@
 = Introduction =
 
 *SimplyGlobal*...
-  * is simple
+  * helps you create multilingual sites in rails
   * makes it easy to use different template files for different languages
   * uses multilingual file written in pure ruby... no database or yml files
 
