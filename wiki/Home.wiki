@@ -1,4 +1,3 @@
-
 = Introduction =
 
 SimplyGlobal contains hashes of languages.
@@ -34,3 +33,7 @@ fr = {
 {{{
 SimplyGlobal.add_language_hash(:fr, fr)
 }}}
+
+= How to use it ? =
+
+[How How to use SimplyGlobal]
