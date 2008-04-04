@@ -1,5 +1,3 @@
-= Install =
-
   # Copy the plugin in the _vendor/plugin_ directory
   # Create a file named _simplyglobal.rb_ in the _config/initializers_ directory
   # Create a `hash` of language
