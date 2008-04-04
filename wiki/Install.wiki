@@ -1,14 +1,21 @@
   # Copy the plugin in the _vendor/plugin_ directory
   # Create a file named _simplyglobal.rb_ in the _config/initializers_ directory
-  # Create a `hash` of language
+  # In _simplyglobal.rb_, create a `hashes` of language
 {{{
 # français
 fr = {
     "hi" => "bonjour",
     "welcome" => "bienvenue"  
 }
+
+# espanol
+es = {
+    "hi" => "hola",
+    "welcome" => "bienvenida"
+}
 }}}
-  # Add the language `hash` to the object
+  # Add the language `hashes` to the object
 {{{
 SimplyGlobal.add_language_hash(:fr, fr)
+SimplyGlobal.add_language_hash(:es, es)
 }}}
