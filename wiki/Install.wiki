@@ -37,3 +37,5 @@ es = {
 SimplyGlobal.add_language_hash(:fr, fr)
 SimplyGlobal.add_language_hash(:es, es)
 }}}
+
+In *development*, this file will be loaded every request. In *production*, it is loaded once.
