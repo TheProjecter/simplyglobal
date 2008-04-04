@@ -19,3 +19,21 @@ es = {
 SimplyGlobal.add_language_hash(:fr, fr)
 SimplyGlobal.add_language_hash(:es, es)
 }}}
+
+You will end up with a file named _simplyglobal.rb_ that looks like this :
+{{{
+# français
+fr = {
+    "hi" => "bonjour",
+    "welcome" => "bienvenue"  
+}
+
+# espanol
+es = {
+    "hi" => "hola",
+    "welcome" => "bienvenida"
+}
+
+SimplyGlobal.add_language_hash(:fr, fr)
+SimplyGlobal.add_language_hash(:es, es)
+}}}
