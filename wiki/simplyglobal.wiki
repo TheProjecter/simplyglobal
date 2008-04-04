@@ -1,0 +1,63 @@
+#labels Featured
+= Introduction =
+
+*SimplyGlobal*...
+  * helps you create multilingual sites in rails
+  * makes it easy to use different template files for different languages
+  * uses multilingual file written in pure ruby... no database or yml files
+
+= Install =
+
+  # Copy the plugin in the _vendor/plugin_ directory
+  # Create a file named _simplyglobal.rb_ in the _config/initializers_ directory
+  # Create a `hash` of language
+{{{
+# français
+fr = {
+    "hi" => "bonjour",
+    "welcome" => "bienvenue"  
+}
+}}}
+  # Add the language `hash` to the object
+{{{
+SimplyGlobal.add_language_hash(:fr, fr)
+}}}
+
+= Creating routes =
+
+more to come...
+
+= How to use it ? =
+
+[How How to use SimplyGlobal]
+
+= Show templates in the specified language = 
+
+== The always_use property ==
+If you set the `always_use` class variable of the *SimplyGlobal* object to `true`, it will always try to render the page in the specified language. *This is the default behavior*.
+
+{{{
+SimplyGlobal.always_render = true # Do not try to render a page using SimplyGlobal
+puts SimplyGlobal.always_render?.to_s # Show the value of always_render
+}}}
+
+== The :use_simply_global parameter ==
+If `always_use` is set to `false`, you can set the parameter `:use_simply_global` to `true` to force it.
+
+{{{
+render :use_simply_global => true # Force the use of simply global
+}}}
+
+== The templates that will be used ==
+By setting the `always_use` or `:use_simply_global` to `true`, the plugin will look for a template file called [action]_[language].html.erb.
+
+{{{
+class HomeController < ApplicationController
+	# This will try to render the template 'home/index_fr.html.erb'
+	# If it does not exist, it will render 'home/index.html.erb'
+	def index
+		SimplyGlobal.locale = :fr
+		render :use_simply_global => true
+	end
+end
+}}}
