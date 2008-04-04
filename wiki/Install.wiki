@@ -1,6 +1,6 @@
   # Execute ./script/plugin install http://simplyglobal.googlecode.com/svn/trunk/simplyglobal
   # Create a file named _simplyglobal.rb_ in the _config/initializers_ directory
-  # In _simplyglobal.rb_, create a `hashes` of language
+  # In _simplyglobal.rb_, create hashes of language
 {{{
 # français
 fr = {
@@ -14,7 +14,7 @@ es = {
     "welcome" => "bienvenida"
 }
 }}}
-  # Add the language `hashes` to the object
+  # Add the language hashes to the object
 {{{
 SimplyGlobal.add_language_hash(:fr, fr)
 SimplyGlobal.add_language_hash(:es, es)
