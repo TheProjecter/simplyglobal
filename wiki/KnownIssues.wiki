@@ -1,0 +1,4 @@
+#summary This page list all known problems with SimplyGlobal
+
+  * because class variables are "buggy", you should always initialize SimplyGlobal.locale at the beginning of each request
+  * form_for does not automatically pass the "locale" parameter
