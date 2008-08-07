@@ -4,7 +4,7 @@
 If you set the `always_use` class variable of the *SimplyGlobal* object to `true`, it will always try to render the page in the specified language. *This is the default behavior*.
 
 {{{
-SimplyGlobal.always_render = true # Do not try to render a page using SimplyGlobal
+SimplyGlobal.always_render = false # Do not try to render a page using SimplyGlobal
 puts SimplyGlobal.always_render?.to_s # Show the value of always_render
 }}}
 
