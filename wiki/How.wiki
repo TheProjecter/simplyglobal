@@ -24,7 +24,7 @@ You can also use replacement characters
 You can specify the language too
 
 {{{
-"welcome".t(:fr) # Retourne "Bienvenue"
+"welcome".t(:fr) # returns "Bienvenue"
 }}}
 
 or use `:all` if you want an `hash` of all languages
