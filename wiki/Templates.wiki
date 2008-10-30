@@ -1,22 +1,7 @@
-= Show templates in the specified language = 
+= Show views in the specified language = 
 
-== The always_use property ==
-If you set the `always_use` class variable of the *SimplyGlobal* object to `true`, it will always try to render the page in the specified language. *This is the default behavior*.
-
-{{{
-SimplyGlobal.always_use = false # Do not try to render a page using SimplyGlobal
-puts SimplyGlobal.always_use?.to_s # Show the value of always_render
-}}}
-
-== The :use_simply_global parameter ==
-If `always_use` is set to `false`, you can set the parameter `:use_simply_global` to `true` to force it.
-
-{{{
-render :use_simply_global => true # Force the use of simply global
-}}}
-
-== The templates that will be used ==
-By setting the `always_use` or `:use_simply_global` to `true`, the plugin will look for a template file called [action]_[language].html.erb.
+== The view that will be used ==
+The plugin will look for a template file called [action]_[language].html.erb.
 
 {{{
 class HomeController < ApplicationController
@@ -24,7 +9,9 @@ class HomeController < ApplicationController
 	# If it does not exist, it will render 'home/index.html.erb'
 	def index
 		SimplyGlobal.locale = :fr
-		render :use_simply_global => true
 	end
 end
 }}}
+
+== The partial that will be used ==
+It also works with the partial!
